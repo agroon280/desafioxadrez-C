@@ -33,16 +33,12 @@ while (i <= 8){
     case 4:
     for(i; i <= 1; i++){
         int c = 1;
-while (c <= 3){
-    if(c==1){
-        printf("CAVALO MOVEU-SE PARA BAIXO\n");
-    }else if(c==2){
-        printf("CAVALO MOVEU-SE PARA BAIXO\n");
-    }else if(c==3){
-        printf("CAVALO MOVEU-SE PARA ESQUERDA\n");
-    }else;
+while (c <= 2)
+{
+     printf("CAVALO MOVEU-SE PARA BAIXO\n"); 
     c++;
-    }
+}
+printf("CAVALO MOVEU-SE PARA ESQUERDA\n");
 }
 break;
 default:
