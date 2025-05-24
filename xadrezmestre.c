@@ -16,9 +16,7 @@ bispo(b - 1);}
 void rainha(int r){
 if(r > 0){
 printf("RAINHA MOVIMENTOU-SE PARA ESQUERDA\n");
-rainha(r - 1);
-}
-
+rainha(r - 1);}
 }
 
 int main(){
@@ -37,32 +35,32 @@ e as apliquei no sistema de escolhas das pecas no menu do usuario*/
 
 switch (escolha){
 case 1:
-     torre(movt);
+ torre(movt);
     break;
 case 2:
  bispo(movb);
 break;
 case 3:
-rainha(movr);
+ rainha(movr);
 break;
 /*Usando uma estrutura de loops aninhadas, estruturei usando duas variáveis para que 
 imprima um printf normal e outro usando If com a condicao (j ==2), e logo usando break; 
 pulando para o último printf...
 */
-    case 4:
-for(int i=1,j=2;i>0;i--){
-for(j;j>0;j--){
-printf("CAVALO MOVEU-SE PARA CIMA\n");
-if (j==2){
-    printf("CAVALO MOVEU-SE PARA CIMA\n"); 
+case 4:
+ for(int i=1,j=2;i>0;i--){
+ for(j;j>0;j--){
+ printf("CAVALO MOVEU-SE PARA CIMA\n");
+ if (j==2){
+ printf("CAVALO MOVEU-SE PARA CIMA\n"); 
 }
 break;}
 }
-printf("CAVALO MOVEU-SE PARA DIREITA\n");
+ printf("CAVALO MOVEU-SE PARA DIREITA\n");
 break;
 default:
-printf("erro...invalido\ntente novamente");
-    break;
+ printf("erro...invalido\ntente novamente");
+ break;
 }
     return 0;
 }
